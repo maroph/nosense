@@ -5,7 +5,7 @@
 # https://guts.github.io/mkdocs-rss-plugin/
 site_name: No Sense
 site_url: https://maroph.github.io/nosense/
-site_description: My GitHub repositories related blog
+site_description: Blog with some of my stupid thoughts.
 site_author: Manfred Rosenboom (maroph)
 
 repo_url: https://github.com/maroph/nosense/
@@ -41,7 +41,7 @@ theme:
         - content.code.copy
         - content.tooltips
         - navigation.expand
-        - navigation.footer
+        # - navigation.footer
         - navigation.indexes
         - navigation.instant
         - navigation.prune
@@ -53,7 +53,7 @@ theme:
         - search.suggest
         - search.highlight
         - toc.follow
-#        - toc.integrate
+        # - toc.integrate
     icon:
         repo: fontawesome/brands/github
         edit: material/pencil

@@ -2,5 +2,6 @@ authors:
     maroph:
         name: Manfred Rosenboom
         description: Author
-        avatar: https://avatars.githubusercontent.com/u/1909126
+        # avatar: https://raw.githubusercontent.com/maroph/nosense/refs/heads/main/docs/assets/great_wave_off_kanagawa_200x200.jpg
+        avatar: https://maroph.github.io/nosense/assets/great_wave_off_kanagawa_200x200.jpg
         url: https://github.com/maroph
