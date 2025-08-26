@@ -14,7 +14,7 @@ LICENSE="License: MIT <https://choosealicense.com/licenses/mit/>"
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="23-AUG-2025"
+declare -r VERSION_DATE="26-AUG-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 SCRIPT_DIR=$(dirname $0)
@@ -208,6 +208,8 @@ echo "+++" > ${file}
 echo "date = '$(date +"%Y-%m-%dT%H:%M:%S%:z")'" >> ${file}
 echo "draft = ${draft}" >> ${file}
 echo "title = '${title}'" >> ${file}
+echo "# categories = ['cat1','cat2']" >> ${file}
+echo "# tags = ['til','curl','git','openssl']" >> ${file}
 echo "+++" >> ${file}
 #
 echo "" >> ${file}

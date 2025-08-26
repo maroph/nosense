@@ -31,72 +31,42 @@ pygmentsCodefencesGuessSyntax = true
 
 [menus]
   [[menus.main]]
-    identifier = 'blog'
     name = 'Blog'
     url = '/posts/'
     weight = 1
   # [[menus.main]]
   #   name = 'Notes'
   #   pageRef = 'pages/notes'
-  #   weight = 2
   # [[menus.main]]
   #   parent = 'Notes'
   #   name = 'Note'
   #   url = 'pages/notes/note'
-  #   weight = 1
-  [[menus.main]]
-    name = 'Software'
-    pageRef = 'pages/software'
-    weight = 2
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Adoptium'
-    url = 'https://adoptium.net/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Apache Tomcat'
-    url = 'https://tomcat.apache.org/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'curl'
-    url = 'https://curl.se/download.html'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Git (windows)'
-    url = 'https://git-scm.com/download/win'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Hugo'
-    url = 'https://gohugo.io/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Material for MkDocs'
-    url = 'https://squidfunk.github.io/mkdocs-material/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'OpenSSL'
-    url = 'https://openssl-library.org/source/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'Pandoc'
-    url = 'https://pandoc.org/'
-  [[menus.main]]
-    parent = 'Software'
-    name = 'XAMPP'
-    url = 'https://www.apachefriends.org/'
+  # [[menus.main]]
+  #   name = 'Software'
+  #   pageRef = 'pages/software'
+  # [[menus.main]]
+  #   parent = 'Software'
+  #   name = 'Adoptium'
+  #   url = 'https://adoptium.net/'
   [[menus.main]]
     name = 'Info'
     pageRef = 'pages/info'
-    weight = 3
   [[menus.main]]
     parent = 'Info'
     name = 'About'
     url = 'pages/info/about/'
     # pageRef = 'pages/info/about.md'
+    weight = 1
   [[menus.main]]
     parent = 'Info'
     name = 'License'
     url = 'pages/info/license/'
+    weight = 2
+  [[menus.main]]
+    parent = 'Info'
+    name = 'maroph.github.io'
+    url = 'https://maroph.github.io/'
+    weight = 3
 
 [privacy]
   [privacy.disqus]

@@ -4,7 +4,6 @@ draft = false
 title = 'About'
 +++
 
-
-This site is some kind of public notebook for topics I'm interested in.
-So the content might not be of interest for anyone else.
+This site is about things I'm interested in.  
+The content might not be of interest to anyone else.
 
