@@ -208,8 +208,8 @@ echo "+++" > ${file}
 echo "date = '$(date +"%Y-%m-%dT%H:%M:%S%:z")'" >> ${file}
 echo "draft = ${draft}" >> ${file}
 echo "title = '${title}'" >> ${file}
-echo "# categories = ['cat1','cat2']" >> ${file}
-echo "# tags = ['til','curl','git','openssl']" >> ${file}
+# echo "# categories = ['cat1','cat2']" >> ${file}
+echo "# tags = ['tilt','curl','git','hugo','openssl']" >> ${file}
 echo "+++" >> ${file}
 #
 echo "" >> ${file}

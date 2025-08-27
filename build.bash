@@ -12,7 +12,7 @@ LICENSE="License: CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>"
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="25-AUG-2025"
+declare -r VERSION_DATE="27-AUG-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 ###############################################################################
@@ -155,6 +155,9 @@ then
         GHP_IMPORT="ghp-import"
     fi
 #
+    echo "${SCRIPT_NAME}: rm -fr ./public"
+    rm -fr ./public
+#
     echo "${SCRIPT_NAME}: hugo build --gc --minify"
     hugr build --gc --minify || exit 1
     echo ""
@@ -175,6 +178,9 @@ then
 fi
 #
 ###############################################################################
+#
+echo "${SCRIPT_NAME}: rm -fr ./public"
+rm -fr ./public
 #
 echo "${SCRIPT_NAME}: hugo build --gc --minify"
 hugo build --gc --minify || exit 1
