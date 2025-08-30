@@ -29,6 +29,10 @@ e69e25d4ca0d3c737f0677995d2bf9541ffb4926 themes/beautifulhugo (heads/master)
 $ git submodule update
 ```
 
+### Clone the Repository
+```
+$ git clone --recurse-submodules https://github.com/maroph/nosense.git
+
 ## Additions
 ### File robots.txt
 ```
