@@ -14,7 +14,7 @@ LICENSE="License: MIT <https://choosealicense.com/licenses/mit/>"
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="26-AUG-2025"
+declare -r VERSION_DATE="02-SEP-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 SCRIPT_DIR=$(dirname $0)
@@ -49,18 +49,20 @@ print_usage() {
     cat <<EOT
 
 Usage: ${SCRIPT_NAME} [<options>] <filename>
-       Create a new Pelican item (post or page) file.
+       Create a new Hugo item (post or page) file.
 
     Options:
-    -h|--help     : show this help text and exit
-    -V|--version  : show version information and exit
-    --list        : TODO
-    --list-pages  : TODO
-    --list-posts  : TODO
-    --list-static : TODO
-    -n|--no-edit  : TODO
-    -p|--page     : create a page (default: post)
-    --draft       : set draft to true
+    -h|--help         : show this help text and exit
+    -V|--version      : show version information and exit
+    -n|--no-edit      : don't open file for editing
+    -p|--page         : create a page (default: post)
+    -d|--draft        : set draft to true
+    --list-items      : list all pages and posts
+    --list-pages      : list pages only
+    --list-posts      : list posts only
+    --list-static     : list content of directory static
+    --list-categories : list all categories
+    --list-tags       : list all tags
 
     Argument:
     filename : name of Markdown file (*.md) to create
@@ -89,7 +91,7 @@ do
             echo "${LICENSE}"
             exit 0
             ;;
-        --list)
+        --list-items)
             find content -print | sed -e '/^content$/d' -e 's!^content/!!'
             exit 0
             ;;
@@ -105,13 +107,21 @@ do
             find static -print | sed -e '/^static$/d' -e 's!^static/!!'
             exit 0
             ;;
+        --list-categories)
+            find public/categories/ -mindepth 1 -maxdepth 1 -type d -print | sed -e 's!^public/categories/!!'
+            exit 0
+            ;;
+        --list-tags)
+            find public/tags/ -mindepth 1 -maxdepth 1 -type d -print | sed -e 's!^public/tags/!!'
+            exit 0
+            ;;
         -n | --no-edit)
             do_edit=0
             ;;
         -p | --page)
             is_page=1
             ;;
-        --draft)
+        -d | --draft)
             draft="true"
             ;;
         -*)
@@ -209,7 +219,7 @@ echo "date = '$(date +"%Y-%m-%dT%H:%M:%S%:z")'" >> ${file}
 echo "draft = ${draft}" >> ${file}
 echo "title = '${title}'" >> ${file}
 # echo "# categories = ['cat1','cat2']" >> ${file}
-echo "# tags = ['tilt','curl','git','hugo','openssl']" >> ${file}
+echo "# tags = ['tag1','tag2']" >> ${file}
 echo "+++" >> ${file}
 #
 echo "" >> ${file}
