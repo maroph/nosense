@@ -19,6 +19,11 @@ $ git submodule add https://github.com/halogenica/beautifulhugo themes/beautiful
 $ echo "theme = 'beautifulhugo'" >> hugo.toml
 ```
 
+### Clone the Repository
+```
+$ git clone --recurse-submodules https://github.com/maroph/nosense.git
+```
+
 ### Status/Update of the theme
 ```
 $ git submodule status
@@ -28,10 +33,6 @@ e69e25d4ca0d3c737f0677995d2bf9541ffb4926 themes/beautifulhugo (heads/master)
 ```
 $ git submodule update
 ```
-
-### Clone the Repository
-```
-$ git clone --recurse-submodules https://github.com/maroph/nosense.git
 
 ## Additions
 ### File robots.txt
@@ -112,4 +113,3 @@ body {
 License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a>
 </div>
 ```
-
