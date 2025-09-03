@@ -1,4 +1,5 @@
 baseURL = 'https://maroph.github.io/nosense/'
+# https://raw.githubusercontent.com/halogenica/beautifulhugo/refs/heads/master/exampleSite/hugo.toml
 DefaultContentLanguage = 'en'
 languageCode = 'en-us'
 title = 'No Sense'
@@ -24,10 +25,11 @@ pygmentsCodefencesGuessSyntax = true
   hideAuthor = true
   [params.author]
     name = 'maroph'
+    # email = "youremail@domain.com"
     website = 'https://maroph.github.io/'
     github = 'maroph'
     mastodon = 'https://mastodon.social/@maroph'
-    codepen = 'https://codepen.io/maroph/'
+    codepen = 'maroph'
 
 [menus]
   [[menus.main]]
