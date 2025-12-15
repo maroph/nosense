@@ -7,12 +7,12 @@
 # This work is licensed under a CC-BY 4.0 License. #
 # https://creativecommons.org/licenses/by/4.0/     #
 ####################################################
-COPYRIGHT="Copyright (C) 2025 Manfred Rosenboom."
-LICENSE="License: CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>"
+declare -r COPYRIGHT="Copyright (C) 2025 Manfred Rosenboom."
+declare -r LICENSE="License: CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>"
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="27-AUG-2025"
+declare -r VERSION_DATE="06-DEC-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 ###############################################################################
@@ -69,9 +69,8 @@ Options:
 
   Working directory : ${SCRIPT_DIR}
 
-  Deployment is only availabe from within a Git repository and the
-  Python module ghp-import (https://pypi.org/project/ghp-import/)
-  must be installed.
+  Deployment is only availabe from within a Git repository and the installed
+  Python module ghp-import (https://pypi.org/project/ghp-import/).
 
 EOT
 }
@@ -159,7 +158,7 @@ then
     rm -fr ./public
 #
     echo "${SCRIPT_NAME}: hugo build --gc --minify"
-    hugr build --gc --minify || exit 1
+    hugo build --gc --minify || exit 1
     echo ""
 #
     echo "${SCRIPT_NAME}: ghp-import --no-jekyll --push --no-history ./public"
@@ -172,8 +171,8 @@ fi
 #
 if [ "$1" = "serve" ]
 then
-    echo "${SCRIPT_NAME}: hugo server ..."
-    hugo server &
+    echo "${SCRIPT_NAME}: hugo server --disableFastRender ..."
+    hugo server --disableFastRender &
     exit 0
 fi
 #

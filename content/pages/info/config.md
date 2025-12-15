@@ -5,14 +5,27 @@ title = 'Hugo Site Configuration'
 tags = ['hugo']
 +++
 
-## Hugo
+## Hugo URLs
+
+* <https://maroph.github.io/nosense>
+  main site
+* <https://maroph.github.io/nosense/categories>
+  list of categories
+* <https://maroph.github.io/nosense/tags>
+  list of tags
+* <https://maroph.github.io/nosense/index.xml>
+  RSS feed
+* <https://maroph.github.io/nosense/sitemap.xml>
+  Sitemap
+
+## Hugo Configuration
 I use [Hugo](https://gohugo.io/) to build my site with the
 [beautifulhugo](https://github.com/halogenica/beautifulhugo)
 theme.
 
 ```
-$ hugo new site nosense_hugo
-$ cd nosense_hugo
+$ hugo new site nosense
+$ cd nosense
 $ mkdir content/pages content/posts static/images/
 $ git init
 $ git submodule add https://github.com/halogenica/beautifulhugo themes/beautifulhugo
@@ -32,6 +45,36 @@ e69e25d4ca0d3c737f0677995d2bf9541ffb4926 themes/beautifulhugo (heads/master)
 
 ```
 $ git submodule update
+
+or
+
+$ cd themes/beautifulhugo
+$ git submodule update
+$ git fetch --all
+$ git pull
+```
+
+## Deploy Files to the gh-pages Branch
+I use the following Python module for this purpose:
+
+* [PyPi:ghp-import](https://pypi.org/project/ghp-import/)
+
+```bash
+python3 -m venv --prompt ghp-import ./venv
+chmod 700 ./venv || exit 1
+source ./venv/bin/activate || exit 1
+#
+python -m pip install --upgrade pip
+python -m pip install --upgrade setuptools
+python -m pip install --upgrade wheel
+#
+python -m pip install --upgrade ghp-import
+```
+
+You can publish the current branch with the following command:
+
+```
+ghp-import --no-jekyll --push --no-history ./public
 ```
 
 ## Additions
@@ -45,6 +88,12 @@ $ cat static/robots.txt
 User-agent: *
 Disallow: /
 ```
+
+### Image files
+
+* static/images/cc-by_88x31.png
+* static/images/favicon_hugo-32x32.png
+* static/images/great_wave_off_kanagawa_200x200.jpg
 
 ### Directory .well-known
 ```
@@ -97,6 +146,8 @@ files to make some small changes to the theme layout.
 
 #### File head_custom.html
 ```
+
+<meta name="fediverse:creator" content="@maroph@mastodon.social" />
 <style>
 body {
   background: #fcfcfc;
@@ -110,6 +161,8 @@ body {
 #### File footer_custom.html
 ```
 <div style="display: block; margin: 5px;">
-License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0</a>
+License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+<a rel="me" href="https://mastodon.social/@maroph"></a>
 </div>
 ```
+

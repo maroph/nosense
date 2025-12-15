@@ -54,11 +54,19 @@ pygmentsCodefencesGuessSyntax = true
     name = 'License'
     url = 'pages/info/license/'
     weight = 3
-  [[menus.main]]
-    parent = 'Info'
-    name = 'maroph.github.io'
-    url = 'https://maroph.github.io/'
-    weight = 4
+  # [[menus.main]]
+  #   parent = 'Info'
+  #   name = 'maroph.github.io'
+  #   url = 'https://maroph.github.io/'
+  #   weight = 4
+  # [[menus.main]]
+  #   name = 'Notes'
+  #   pageRef = 'pages/notes'
+  # [[menus.main]]
+  #   parent = 'Notes'
+  #   name = 'Note'
+  #   url = 'pages/notes/note/'
+  #   weight = 1
 
 [privacy]
   [privacy.disqus]
@@ -74,3 +82,10 @@ pygmentsCodefencesGuessSyntax = true
     disable = true
   [privacy.youTube]
     disable = true
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
+
