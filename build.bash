@@ -12,7 +12,7 @@ declare -r LICENSE="License: CC-BY 4.0 <https://creativecommons.org/licenses/by/
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="06-DEC-2025"
+declare -r VERSION_DATE="19-DEC-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 ###############################################################################
@@ -43,9 +43,9 @@ else
 fi
 #
 GHP_IMPORT=""
-if [ -x ~/bin/ghp-import.bash ]
+if [ -x $HOME/bin/ghp-import.bash ]
 then
-    GHP_IMPORT="~/bin/ghp-import.bash"
+    GHP_IMPORT="$HOME/bin/ghp-import.bash"
 fi
 #
 ###############################################################################
