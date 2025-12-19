@@ -44,14 +44,14 @@ e69e25d4ca0d3c737f0677995d2bf9541ffb4926 themes/beautifulhugo (heads/master)
 ```
 
 ```
-$ git submodule update
+$ git submodule update --remote
 
 or
 
 $ cd themes/beautifulhugo
 $ git submodule update
 $ git fetch --all
-$ git pull
+$ git pull (git pull origin master)
 ```
 
 ## Deploy Files to the gh-pages Branch
@@ -78,6 +78,13 @@ ghp-import --no-jekyll --push --no-history ./public
 ```
 
 ## Additions
+### Homepage
+
+```
+$ touch content/_index.md
+$ chmod 640 content/_index.md
+```
+
 ### File robots.txt
 ```
 $ touch static/robots.txt
@@ -101,8 +108,16 @@ mkdir -p static/.well-known
 chmod 750 static/.well-known
 ```
 
-#### File .well-known/security.txt
+#### File .well-known/security*.txt
 ```
+$ chmod 640 static/.well-known/security_unsigned.txt
+$ cat static/.well-known/security_unsigned.txt
+Contact: mailto:maroph@pm.me
+Expires: 2025-12-31T22:59:00.000Z
+Encryption: https://maroph.github.io/info/openpgp/pub_maroph_at_pm.me_20251218.asc
+Preferred-Languages: de, en, nl
+Canonical: https://maroph.github.io/nosense/.well-known/security.txt
+
 $ chmod 640 static/.well-known/security.txt
 $ cat static/.well-known/security.txt
 Contact: mailto:maroph@pm.me

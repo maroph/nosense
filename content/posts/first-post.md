@@ -1,8 +1,8 @@
 +++
-date = '2025-08-28T17:21:00+02:00'
+date = '2025-12-19T16:03:00+01:00'
 draft = false
 title = 'First Post'
 +++
 
-My first post.
+Placeholder for my first post.
 

@@ -1,5 +1,4 @@
 baseURL = 'https://maroph.github.io/nosense/'
-# https://raw.githubusercontent.com/halogenica/beautifulhugo/refs/heads/master/exampleSite/hugo.toml
 DefaultContentLanguage = 'en'
 languageCode = 'en-us'
 title = 'No Sense'
@@ -9,15 +8,18 @@ pygmentsStyle = 'trac'
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
+enableGitInfo = false
 
 [params]
   subtitle = 'Some of my stupid thoughts'
   selfHosted = true
   mainSections = ['']
+  # mainSections = ['posts']
   favicon = 'images/favicon_hugo-32x32.png'
   logo = 'images/great_wave_off_kanagawa_200x200.jpg'
   rss = true
   comments = false
+  # commit = 'https://github.com/maroph/nosense/tree/'
   readingTime = false
   wordCount = false
   useHLJS = true
