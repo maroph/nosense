@@ -14,7 +14,7 @@ declare -r LICENSE="License: MIT <https://choosealicense.com/licenses/mit/>"
 #
 declare -r SCRIPT_NAME=$(basename $0)
 declare -r VERSION="0.1.0"
-declare -r VERSION_DATE="06-DEC-2025"
+declare -r VERSION_DATE="22-DEC-2025"
 declare -r VERSION_STRING="${SCRIPT_NAME}  ${VERSION}  (${VERSION_DATE})"
 #
 SCRIPT_DIR=$(dirname $0)
@@ -55,12 +55,12 @@ Usage: ${SCRIPT_NAME} [<options>] <filename>
     Options:
     -h|--help     : show this help text and exit
     -V|--version  : show version information and exit
-    --list        : TODO
-    --list-pages  : TODO
-    --list-posts  : TODO
-    --list-static : TODO
-    -n|--no-edit  : TODO
-    --no-date     : dont't add prefix YYYY/MM/ to file name for posts
+    --list        : list files in directory content
+    --list-pages  : list files in directory content/pages
+    --list-posts  : list files in directory content/post
+    --list-static : list files in directory static
+    -n|--no-edit  : create item but don't open it in an editor
+    --no-date     : dont't add prefix YYYY/ to file name for posts
                     (posts only)
     -p|--page     : create a page (default: post)
     --draft       : set draft to true
@@ -68,7 +68,7 @@ Usage: ${SCRIPT_NAME} [<options>] <filename>
     Argument:
     filename : name of Markdown file (*.md) to create
 
-    The given path of the file name will be prepend with
+    The given path of the item file name will be prepend with
      "content/posts/" (post) or "content/pages/" (page).
 
 EOT
@@ -155,7 +155,7 @@ else
     then
         file="content/posts/$1"
     else
-        prefix=$(date +"%Y/%m")
+        prefix=$(date +"%Y")
         file="content/posts/${prefix}/$1"
     fi
 fi
@@ -225,8 +225,7 @@ echo "draft = ${draft}" >> ${file}
 echo "title = '${title}'" >> ${file}
 ## echo "# categories = ['Uncategorized']" >> ${file}
 ## echo "# categories = ['Category A', 'Category B']" >> ${file}
-# tags : 'hugo', 'til', 'zensical'
-echo "# tags = ['til', 'zensical']" >> ${file}
+echo "# tags = ['hugo','til','zensical']" >> ${file}
 echo "+++" >> ${file}
 #
 echo "" >> ${file}
