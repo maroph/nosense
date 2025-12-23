@@ -1,4 +1,4 @@
-# Last updated: 22-DEC-2025
+# Last updated: 23-DEC-2025
 baseURL = 'https://maroph.github.io/nosense/'
 DefaultContentLanguage = 'en'
 languageCode = 'en-us'
@@ -35,18 +35,8 @@ enableGitInfo = false
 [menus]
   [[menus.main]]
     name = 'About'
-    pageRef = 'pages/info/about/'
-    # url = 'pages/info/about/'
+    pageRef = 'pages/about/'
     weight = 1
-  # [[menus.main]]
-  #   name = 'Info'
-  #   pageRef = 'pages/info'
-  #   weight = 1
-  # [[menus.main]]
-  #   parent = 'Info'
-  #   name = 'About'
-  #   pageRef = 'pages/info/about/'
-  #   # url = 'pages/info/about/'
 
 [privacy]
   [privacy.disqus]
