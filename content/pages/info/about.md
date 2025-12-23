@@ -1,11 +1,13 @@
 +++
-date = '2025-12-22T15:20:00+01:00'
+date = '2025-12-23T10:40:00+01:00'
 draft = false
 title = 'About'
 +++
 
 ## No Sense - Some of my stupid thoughts
-This site is about things I'm interested in.  
+This site is about things I'm interested in. It is a kind of notebook for
+some of my stupid thoughts.
+
 The content might not be of interest to anyone else.
 
 ## License
