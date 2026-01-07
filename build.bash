@@ -63,9 +63,9 @@ Options:
   Arguments
   build         : create the site data (default)
                   Location: public
+  deploy        : create the site and push all data to branch gh-pages
   serve         : create the site and run the Hugo development web server
   shut          : shutdown Hugo development web server
-  deploy        : create the site and push all data to branch gh-pages
 
   Working directory : ${SCRIPT_DIR}
 
