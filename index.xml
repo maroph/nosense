@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>No Sense</title><link>https://maroph.github.io/nosense/</link><description>Recent content on No Sense</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 Jan 2026 17:41:25 +0100</lastBuildDate><atom:link href="https://maroph.github.io/nosense/index.xml" rel="self" type="application/rss+xml"/><item><title>Wamp Setup</title><link>https://maroph.github.io/nosense/posts/2026/wamp_setup/</link><pubDate>Wed, 21 Jan 2026 17:41:25 +0100</pubDate><guid>https://maroph.github.io/nosense/posts/2026/wamp_setup/</guid><description>&lt;p&gt;Heute habe ich auf
+&lt;a href="https://github.com/maroph/technotes/tree/main/WAMP"&gt;GitHub&lt;/a&gt;
+meine WAMP Setup Beschreibung veröffentlicht.&lt;/p&gt;
+&lt;p&gt;WAMP ist eine &lt;a href="https://www.apachefriends.org/"&gt;XAMPP&lt;/a&gt;
+ähnliche Umgebung für Windows.&lt;/p&gt;
+&lt;p&gt;Auf einem &lt;strong&gt;W&lt;/strong&gt;indows System werden dabei&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Apache&lt;/strong&gt; Web Server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;ariaDB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;P&lt;/strong&gt;HP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;so konfiguriert, dass alle Daten in einem Verzeichnis abgelegt
+sind. Keine der Komponenten wird installiert oder als Service
+betrieben.&lt;/p&gt;</description></item><item><title>Convert To Zensical</title><link>https://maroph.github.io/nosense/posts/2026/convert_to_zensical/</link><pubDate>Wed, 07 Jan 2026 16:54:00 +0100</pubDate><guid>https://maroph.github.io/nosense/posts/2026/convert_to_zensical/</guid><description>&lt;p&gt;My main GitHub Page
+&lt;a href="https://github.com/maroph/maroph.github.io"&gt;maroph/maroph.github.io&lt;/a&gt;
+is created with the &lt;a href="https://www.mkdocs.org/"&gt;MkDocs&lt;/a&gt; based
+&lt;a href="https://squidfunk.github.io/mkdocs-material/"&gt;Material for MkDocs&lt;/a&gt;
+framework.&lt;/p&gt;
+&lt;p&gt;Today I have pushed my first &lt;a href="https://zensical.org/"&gt;Zensical&lt;/a&gt; based
+version. In a first step I used the original &lt;em&gt;mkdocs.yml&lt;/em&gt; config file without
+any problems. Now I have converted all the config data to the TOML format, used
+in the Zensical config file &lt;em&gt;zensical.toml&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The only missing thing in creating my site is the functionality of the
+Material privacy plugin.&lt;/p&gt;</description></item><item><title>No Sense</title><link>https://maroph.github.io/nosense/posts/nosense/</link><pubDate>Tue, 23 Dec 2025 10:41:00 +0100</pubDate><guid>https://maroph.github.io/nosense/posts/nosense/</guid><description>&lt;p&gt;This site is about things I&amp;rsquo;m interested in. It is a kind of notebook for
+some of my stupid thoughts.&lt;/p&gt;
+&lt;p&gt;The content might not be of interest to anyone else.&lt;/p&gt;</description></item><item><title>About</title><link>https://maroph.github.io/nosense/pages/about/</link><pubDate>Tue, 23 Dec 2025 10:40:00 +0100</pubDate><guid>https://maroph.github.io/nosense/pages/about/</guid><description>&lt;h2 id="no-sense---some-of-my-stupid-thoughts"&gt;No Sense - Some of my stupid thoughts&lt;/h2&gt;
+&lt;p&gt;This site is about things I&amp;rsquo;m interested in. It is a kind of notebook for
+some of my stupid thoughts.&lt;/p&gt;
+&lt;p&gt;The content might not be of interest to anyone else.&lt;/p&gt;
+&lt;h2 id="license"&gt;License&lt;/h2&gt;
+&lt;p&gt;The content of this site is licensed under a
+&lt;a href="https://creativecommons.org/licenses/by/4.0/legalcode"&gt;CC BY 4.0 - Creative Commons Attribution 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Short summary of this license:
+&lt;a href="https://creativecommons.org/licenses/by/4.0/deed"&gt;CC BY 4.0 Deed&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

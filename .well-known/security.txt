@@ -1,0 +1,16 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Created: 19-DEC-2025
+Contact: mailto:maroph@pm.me
+Expires: 2027-12-31T22:59:00.000Z
+Encryption: https://maroph.github.io/info/openpgp/pub_maroph_at_pm.me_20280106.asc
+Preferred-Languages: de, en, nl
+Canonical: https://maroph.github.io/nosense/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQJdefEFlrVanWY19sEmWi6EpxBIwUCaUVnUAAKCRAEmWi6EpxB
+I5F+AQCH1vB900Jg+KozSkgpr9Gv2NFZbhR0K5c1xdInZxJllAD/dpAC7r31EO6g
+CEn+h+OTMFOL2Kbx8i0wNXMv6T5acAw=
+=3ueh
+-----END PGP SIGNATURE-----
